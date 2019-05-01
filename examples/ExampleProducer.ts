@@ -13,8 +13,8 @@ const createTopicProducer = async (topic: string, config: IProducerConfig) => {
   return prod
 }
 
-
-createTopicProducer("hello-world", new ProducerConfig("localhost", "9092"))
+console.info('EXECUTING PRODUCER');
+createTopicProducer("hello-world", new ProducerConfig("localhost", "29092"))
 .then(x => {
   producers["hello-world"].send("1", new Buffer("hello"));
 }).catch(err => console.error(err))

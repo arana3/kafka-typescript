@@ -1,7 +1,7 @@
 {
-  "name": "kafka-typescript",
-  "version": "0.0.2",
-  "description": "Interface to node-rdkafka in Typescript",
+  "name": "kafka-typescript-v2",
+  "version": "1.0.0",
+  "description": "Interface to node-rdkafka in Typescript. Forked from CoNarrative simple wrapper",
   "main": "lib/index.js",
   "scripts": {
     "prepare": "node_modules/.bin/tsc && rm -r lib/examples && mv lib/src/* lib && rm -r lib/src",
@@ -11,15 +11,17 @@
     "kafka",
     "typescript"
   ],
-  "author": "CoNarrative",
+  "author": "arana3 / CoNarrative",
   "license": "Apache 2.0",
   "files": [
     "lib"
   ],
   "dependencies": {
-    "node-rdkafka": "^2.0.0"
+    "node-rdkafka": "^2.6.1"
   },
   "devDependencies": {
-    "@types/node": "^8.0.28"
+    "@types/node": "^11.13.7",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.4"
   }
 }
